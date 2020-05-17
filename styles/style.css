@@ -120,18 +120,138 @@ a {
 
 /* Portfolio */
 
+/* @media (min-width: 1200px) {
+  .container2{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
+
 
 .portfolio-content {
+  padding: 2em;
   background-color: rgb(245, 239, 239);
   min-height: 100vh;
 }
 
-/* .contato h2, */
+
 .port-title {
   font-size: 2em;
   text-align: center;
   padding: 10px 0px;
   line-height: 150px;
+}
+
+.sobre {
+  background: no-repeat center/cover url('/assets/sobre.jpg');
+  padding: 2em;
+  min-height: 100vh;
+}
+
+.about p{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  text-align: justify;
+  animation: text-p 3s ease forwards;
+  transition: 1s;
+}
+
+@keyframes text-p {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about a {
+  margin-right: 40%;
+}
+
+.sobre h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 80px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.sobre p {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 1.4em;
+  text-align: justify;
+}
+
+.sobre a {
+  color: rgb(17, 134, 230);
+}
+
+.sobre a:hover {
+  color: crimson;
+  text-decoration: underline;
+}
+
+.sobre .avatar {
+  float: left;
+  margin: 2em;
+  transition: 1s;
+}
+
+.sobre .avatar:hover {
+  transform: scale(1.1);
+}
+
+.sobre .avatar img {
+  margin-top: -50px;
+  width: 450px;
+  height: 450px;
+  border-radius: 2%;
+  object-fit: cover;
+  object-position: center;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  animation: move-img 2s ease forwards;
+
+}
+
+@keyframes move-img {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+@media (max-width: 500px) {
+  .about a {
+    margin-right: 20%;
+  }
+  .sobre .avatar  {
+    width: 90%;
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    float: left;
+  }
+
+  .sobre .avatar img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+  }
 }
 
 .card-content {
@@ -148,7 +268,6 @@ a {
   max-width: 950px;
   padding: 35px 0;
   flex-wrap: wrap;
-
 }
 
 .img-card p {
