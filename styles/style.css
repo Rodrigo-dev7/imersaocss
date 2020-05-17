@@ -38,8 +38,6 @@ header {
 
 }
 
-
-
 .menu {
   background-color: lightslategray;
   position: fixed;
@@ -56,19 +54,12 @@ header {
   opacity: 0.9;
 }
 
-/* 
-.line {
-  margin: 0px 50px;
-  border: 1px solid;
-  box-shadow: 0px 0px 1px -1px #fff;
-  opacity: 0.4;
-} */
-
 .menu a {
   display: block;
   padding: 14px 8px;
   transition: .5s;
 }
+
 
 .menu a:hover {
   color: rgb(92, 167, 238);
@@ -99,7 +90,6 @@ a {
     opacity: 1;
   }
 }
-
 
 
 .site-subtitle, 
@@ -233,7 +223,7 @@ a {
 
 @media (max-width: 500px) {
   .about a {
-    margin-right: 20%;
+    margin-right: 10%;
   }
   .sobre .avatar  {
     width: 90%;
@@ -241,7 +231,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
     float: left;
   }
 
@@ -341,9 +330,7 @@ figcaption {
 .contato a {
   color: #fff;
   transition: .4s;
-
 }
-
 
 .contato a:active,
 .contato a:hover {
